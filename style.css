@@ -1,0 +1,110 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+}
+
+.card {
+    width: 35%;
+    display: flex;
+    border-radius: 25px;
+}
+
+.img__product {
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    flex: 55%;
+    min-width: 50%;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.description__product {
+    flex: 45%;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 0px 15px 15px 0px;
+}
+
+small {
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+}
+
+.prix {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.prix p:first-child{
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+}
+
+.prix p:last-child{
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+button {
+    cursor: pointer;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-size: 1rem;
+    word-spacing: .1rem;
+    letter-spacing: .05rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    padding: 1rem 0rem;
+}
+
+button i {
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 640px) {
+    .card {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .img__product {
+        background-image: url(images/image-product-mobile.jpg);
+        background-size: cover;
+        min-height: 250px;
+        background-position: center;
+        border-radius: 15px 15px 0px  0px ;
+    }
+
+    .description__product {
+        padding: 0.8rem;
+    }
+
+    .prix p {
+        margin: 0.5rem;
+    }
+}
