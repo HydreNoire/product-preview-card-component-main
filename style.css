@@ -17,6 +17,8 @@ p {
 
 .card {
     width: 35%;
+    height: 55%;
+    margin: auto;
     display: flex;
     border-radius: 25px;
 }
